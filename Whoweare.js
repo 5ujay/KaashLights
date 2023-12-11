@@ -155,7 +155,7 @@ export const Whoarewe = () => {
         </div>
 
         {/* ========ellpise yellow two======== */}
-        <div className="absolute  ml-24 lg:ml-96 my-32">
+        <div className="absolute ml-24 lg:ml-96 py-10">
           <img className="ms-auto" src={Ellipsefullyellow} alt="" />
         </div>
 
