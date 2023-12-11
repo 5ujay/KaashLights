@@ -11,6 +11,7 @@ import Image110 from "../images/Aboutcollabjellyfish.png";
 import Image111 from "../images/AboutcollabSAF.png";
 import Image155 from "../images/Aboutcollabkolla.png";
 import Footerlogoluxinn from "../images/Footerlogoluxinn.png";
+import { FaArrowRight } from "react-icons/fa";
 import "./whoarewe.css";
 // import AOS from "aos";
 import "aos/dist/aos.css";
@@ -44,12 +45,12 @@ export const Whoarewe = () => {
   }, []);
 
   return (
-    <section className="who-we-are bg-[#101010]  w-full h-full text-white">
+    <section className="bg-[#101010]  w-full h-full text-white">
       {/* ============navbar============= */}
       <div>
         <Navbar />
       </div>
-      <div className="about-company-facts">
+      <div className="">
         {/* <div className="box"> */}
         <img
           className="absolute xl:px-52 md:px-10 mt-15  ms-auto"
@@ -59,11 +60,11 @@ export const Whoarewe = () => {
         {/* </div> */}
 
         {/*=========Top section who we are======== */}
-        <div className="topsection relative w-full flex flex-col px-9 sm:px-32 xl:px-44 2xl:px-52">
-          <div className="text-wrapper-1  text-neutral-50 font-normal text-4xl pt-14 sm:text-5xl sm:mt-20 md:text-7xl md:mt-24 lg:text-8xl lg:mt-16 xl:text-9xl drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)] ">
+        <div className="relative w-full flex flex-col px-9 sm:px-32 xl:px-44 2xl:px-52">
+          <div className="text-neutral-50 font-normal text-4xl pt-14 sm:text-5xl sm:mt-20 md:text-7xl md:mt-24 lg:text-8xl lg:mt-16 xl:text-9xl drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)] ">
             <h1 className=" ">Who we are?</h1>
           </div>
-          <div className="text-wrapper-2 text-neutral-50  flex flex-col font-normal justify-center  leading-7 mt-10 text-sm sm:mt-14 sm:text-base md:mt-22 md:text-lg lg:mt-28">
+          <div className="text-neutral-50  flex flex-col font-normal justify-center  leading-7 mt-10 text-sm sm:mt-14 sm:text-base md:mt-22 md:text-lg lg:mt-28">
             <p>
               Kaash Light Engineers is a young and dynamic lighting studio,{" "}
               <br />
@@ -83,53 +84,85 @@ export const Whoarewe = () => {
 
         {/*==========Red bar 1st section======= */}
         <div className="relative bg-[#EE3224] flex items-center justify-evenly  text-white mt-12 h-12 lg:mt-24 lg:h-24 lg:text-2xl md:h-20 md:text-3xl xl:h-28 xl:text-4xl font-semibold">
-          <div className="project">+100 projects</div>
-          <div className="year">+10 years</div>
-          <div className="country">+7 countries</div>
+          <div className="">+100 projects</div>
+          <div className="">+10 years</div>
+          <div className="">+7 countries</div>
         </div>
 
         {/* ===========patners section========== */}
-        <div className="relative patners-section px-9 mt-20 sm:px-32 md:px-36 lg:mt-48 xl-mt-72 xl:px-44 2xl:px-52  ">
-          <div className="partner text-neutral-50 text-3xl sm:text-4xl font-normal  ">
+        <div className="relative patners-section px-9 mt-20 sm:px-32 lg:mt-48 xl-mt-72 xl:px-44 2xl:px-52  ">
+          <div className="text-neutral-50 text-3xl sm:text-4xl font-normal  ">
             Partners
           </div>
-          <div className="users grid grid-flow-row gap-4 mt-7 grid-cols-2 md:max-w-xl md:flex-row md:mt-8 lg:max-w-5xl lg:grid-cols-4 ">
-            <div className="user1">
-              <div className="border border-white flex items-center justify-center ">
-                <img className="p-4" alt="Icon user" src={Vector} />
+          <div className="grid grid-flow-row gap-4 mt-7 sm:grid-cols-2 md:max-w-md md:flex-row md:mt-8 lg:max-w-5xl lg:grid-cols-4 ">
+            {/* ==== user1 ==== */}
+            <div className="sm:w-fit w-44">
+              <div className="flex flex-row justify-between items-center border border-spacing-1 p-2">
+                <div>
+                  <p>Tech genius - VJ</p>
+                </div>
+                <div>
+                  <FaArrowRight />
+                </div>
               </div>
-              <div className="text-center">Tech genius - VJ</div>
+              <div className="border my-2 p-2 flex items-center justify-center">
+                <img className="p-2" alt="Icon user" src={Vector} />
+              </div>
             </div>
-            <div className="user2">
-              <div className="border border-white flex items-center justify-center ">
-                <img className="p-4" alt="Icon user" src={Vector} />
+            {/* ==== user2 ==== */}
+            <div className="sm:w-fit w-44">
+              <div className="flex flex-row justify-between items-center border border-spacing-1 p-2">
+                <div>
+                  <p>Social bee - LP</p>
+                </div>
+                <div>
+                  <FaArrowRight />
+                </div>
               </div>
-              <div className="text-center">Social bee - LP</div>
+              <div className="border my-2 p-2 flex items-center justify-center">
+                <img className="p-2" alt="Icon user" src={Vector} />
+              </div>
             </div>
-            <div className="user3">
-              <div className="border border-white flex items-center justify-center ">
-                <img className="p-4" alt="Icon user" src={Vector} />
+            {/* ==== user3 ==== */}
+            <div className="sm:w-fit w-44">
+              <div className="flex flex-row justify-between items-center border border-spacing-1 p-2">
+                <div>
+                  <p>Light guru - AG</p>
+                </div>
+                <div>
+                  <FaArrowRight />
+                </div>
               </div>
-              <div className="text-center">Light guru - AG</div>
+              <div className="border my-2 p-2 flex items-center justify-center">
+                <img className="p-2" alt="Icon user" src={Vector} />
+              </div>
             </div>
-            <div className="user4">
-              <div className="border border-white flex items-center justify-center ">
-                <img className="p-4" alt="Icon user" src={Vector} />
+            {/* ==== user3 ==== */}
+            <div className="sm:w-fit w-44">
+              <div className="flex flex-row justify-between items-center border border-spacing-1 p-2">
+                <div>
+                  <p>LoremIpsum - LI</p>
+                </div>
+                <div>
+                  <FaArrowRight />
+                </div>
               </div>
-              <div className="text-center">LoremIpsum - LI</div>
+              <div className="border my-2 p-2 flex items-center justify-center">
+                <img className="p-2" alt="Icon user" src={Vector} />
+              </div>
             </div>
           </div>
         </div>
 
         {/* ========ellpise yellow two======== */}
-        <div className="absolute ellipse ms-auto ml-24 lg:ml-96 mt-32">
+        <div className="absolute  ml-24 lg:ml-96 my-32">
           <img className="ms-auto" src={Ellipsefullyellow} alt="" />
         </div>
 
         <section className="relative">
           {/* ==========contributers section========== */}
           <div className=" px-9 mt-20 sm:px-32 lg:mt-40  xl:mt-48 xl:px-44 2xl:px-52  ">
-            <div className="contributor text-neutral-50  text-3xl sm:text-4xl font-normal ">
+            <div className="text-neutral-50  text-3xl sm:text-4xl font-normal ">
               Contributors
             </div>
             <div className="mt-4 grid sm:grid-flow-col  sm:grid-cols-2 sm:mt-12 ">
@@ -412,47 +445,39 @@ export const Whoarewe = () => {
           </div>
         </section>
         {/* ==========collaboration========== */}
-        <div className="relative px-9 mt-20 sm:px-32 lg:mt-40 xl-48 xl:px-44 2xl:px-52">
-          <div className="collaboration text-neutral-50 text-3xl sm:text-4xl font-normal">
+        <div className="relative px-9 my-20 sm:px-32 lg:mt-40 xl-48 xl:px-44 2xl:px-52">
+          <div className="text-neutral-50 text-3xl sm:text-4xl font-normal">
             Collaboration
           </div>
           <div className="relative mt-8 flex flex-wrap items-center gap-4 sm:gap-12   ">
             <img
-              className="image-1 cursor-pointer h-28 lg:h-36"
+              className="cursor-pointer h-28 lg:h-36"
               alt="Image"
               src={Image106}
             />
             <img
-              className="image-2 cursor-pointer h-28 lg:h-36"
+              className="cursor-pointer h-28 lg:h-36"
               alt="Image"
               src={Image108}
             />
-            <div className="image-3-4 cursor-pointer w-48 lg:w-72  ">
-              <img
-                className="image-3 lg:h-[75px]"
-                alt="Image"
-                src={Footerlogoluxinn}
-              />
-              <img
-                className="image-4 lg:h-[75px] "
-                alt="Image"
-                src={Image110}
-              />
+            <div className="cursor-pointer w-48 lg:w-72  ">
+              <img className="lg:h-[75px]" alt="Image" src={Footerlogoluxinn} />
+              <img className="lg:h-[75px] " alt="Image" src={Image110} />
             </div>
             <img
-              className="image-5 cursor-pointer h-24 lg:h-36"
+              className="cursor-pointer h-24 lg:h-36"
               alt="Image"
               src={Image111}
             />
             <img
-              className="image-6  cursor-pointer h-24 lg:h-36 "
+              className="cursor-pointer h-24 lg:h-36 "
               alt="Image"
               src={Image155}
             />
           </div>
         </div>
         {/* ===========footer section=========== */}
-        <div className="footer mt-14 lg:mt-24 bg-[#0A0A0A]">
+        <div>
           <Footer />
         </div>
       </div>
