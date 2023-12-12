@@ -58,7 +58,7 @@ const Whatwebelieve = () => {
           <div className="main-body-section">
             <div>
               <img
-                className="absolute px-24 py-60"
+                className="absolute px-24 py-60 ms-auto"
                 src={Ellipsepurpule}
                 alt=""
               />
@@ -173,7 +173,7 @@ const Whatwebelieve = () => {
               Contact us
             </button> */}
               <button
-                className=" px-4 py-2 bg-neutral-100 text-xl mt-10 font-light"
+                className=" px-4 py-2 my-44 bg-neutral-100 text-xl mt-10 font-light"
                 onClick={togglePopup}
               >
                 Contact us
@@ -181,7 +181,7 @@ const Whatwebelieve = () => {
             </div>
           </div>
           {/* =========== footer section ========== */}
-          <div className="footer mt-48">
+          <div>
             <Footer />
           </div>
         </div>
