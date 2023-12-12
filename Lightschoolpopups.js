@@ -38,7 +38,9 @@ const Lightschool = () => {
 
   const [modalContent, setModalContent] = useState({
     imageSrc: "",
-    details: "",
+    heading: "",
+    detailsone: "",
+    detailstwo: "",
   });
   const [isModalOpen, setIsModalOpen] = useState(false);
 
