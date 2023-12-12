@@ -29,6 +29,8 @@ import Lighschool_urban_popup from "../images/Lightschool_urban_popup.png";
 import Lightschool_office_popup from "../images/Lightschool_office_popup.png";
 import Lightschool_sports_popup from "../images/Lightschool_sports_popup.png";
 import Lightschool_industries_popup from "../images/Lightschool_industries_popup.png";
+import Lightschool_home_popup from "../images/Lightschool_home_popup.png";
+import Lightschool_transport_popup from "../images/Lightschool_transport_popup.png";
 
 // starts here....
 const Lightschool = () => {
@@ -117,6 +119,7 @@ const Lightschool = () => {
                 </div>
               </div>
             </div>
+
             <div className="grid grid-cols-2 gap-3 pt-3">
               <div className="grid grid-cols-2 gap-3">
                 <div
@@ -166,6 +169,7 @@ const Lightschool = () => {
                 </div>
               </div>
             </div>
+
             <div className="grid grid-cols-4 gap-3 pt-3">
               <div
                 className="overflow-hidden"
@@ -235,6 +239,56 @@ const Lightschool = () => {
                 </div>
               </div>
             </div>
+
+            <div className="grid grid-cols-2 gap-3 pt-3">
+              <div
+                className="overflow-hidden "
+                onClick={() =>
+                  openModal(
+                    Lightschool_home_popup,
+                    "Home",
+                    "Our home is an impression of our life, persona and family. Living spaces are packed with collections and aspirations as art, photos, furniture and decor. Light design create a wonderful visual impression unique to our dream space by binding them together",
+                    "Technology conceive flexible lighting to support different needs of the family throughout the day, from playful kids corner to dinner with friends or a quite reading corner. Home need a perfect balance of decorative light to complement decor and technical light to support space use with maximum flexibility."
+                  )
+                }
+              >
+                <div className="flex justify-between items-center clr-yellow mb-3 px-2 text-black font-light text-base lg:text-lg">
+                  <p>Hall de locomotives</p>
+                  <FaArrowRight />
+                </div>
+                <div>
+                  <img
+                    className="object-center object-cover h-full w-full"
+                    src={Lightschoolhome}
+                  />
+                </div>
+              </div>
+              <div className="grid grid-cols-2 gap-3">
+                <div
+                  className="overflow-hidden"
+                  onClick={() =>
+                    openModal(
+                      Lightschool_transport_popup,
+                      "Transport",
+                      "Connecting people beyond oceans, transport hubs have created a cohesive ecosystem. Operational 24x7, these spaces should be welcoming and sustainable while allowing travellers to rest, shop and eat.",
+                      "Light for facade defines the architectural view at night and support different demands of travellers and businesses on the inside. Creating a brighter ambience to feel fresh from longer journeys is the prime function of light, while sustainable consumption and maintenance are the key challenges for operations. Connected lighting solutions helps easy maintenance of such heavy use facilities."
+                    )
+                  }
+                >
+                  <div className="flex justify-between items-center clr-yellow mb-3 px-2 text-black font-light text-base lg:text-lg">
+                    <p>Greenwall</p>
+                    <FaArrowRight />
+                  </div>
+                  <div>
+                    <img
+                      className="object-center object-cover h-full w-full"
+                      src={Lightschooltransport}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div className="grid grid-cols-4 gap-3 pt-3">
               <div
                 className="overflow-hidden"
