@@ -41,15 +41,15 @@ const Lightschool = () => {
   const [modalContent, setModalContent] = useState({
     imageSrc: "",
     heading: "",
-    detailsone: "",
-    detailstwo: "",
+    Paraone: "",
+    Paratwo: "",
   });
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const [blurBackground, setBlurBackground] = useState(false);
 
-  const openModal = (imageSrc, heading, detailsone, detailstwo) => {
-    setModalContent({ imageSrc, heading, detailsone, detailstwo });
+  const openModal = (imageSrc, heading, Paraone, Paratwo) => {
+    setModalContent({ imageSrc, heading, Paraone, Paratwo });
     setIsModalOpen(true);
     setBlurBackground(!blurBackground);
   };
@@ -57,6 +57,86 @@ const Lightschool = () => {
   const closeModal = () => {
     setIsModalOpen(false);
     setBlurBackground(!blurBackground);
+  };
+
+  const imageDetails = {
+    LEDpopup: {
+      heading: "LEDs",
+      ParaOne:
+        "Since their invention in 1942, LEDs have evolved to become powerful and versatile light source meeting the challenging needs of present world.  These semiconductors though simple to use, are technical instruments of modern engineering, driven by an array of technical factors to ensure durability in their use.",
+      ParaTwo:
+        "Lumen maintenance, colour rendition and damage factors are few nuances to consider while evaluation an optimal solution for your project. At Kaash, we follow a rigorous technical evaluation to ensure an ideal solution for your project. Let's build your project with light.",
+    },
+    Heritagepopup: {
+      heading: "Heritage",
+      ParaOne:
+        "Castles, forts, and other heritage architecture are noble embodiments of a society's evolving ideals, beliefs, cultures, and values. They serve as living relics of the past and also provide a glimpse into the future of today's civilisation. Often celebrated for tourism, this heritage is pivotal towards economic development along with culture conservation.",
+      ParaTwo:
+        "Light, as the fourth dimension of architecture, offers enormous value to these structures by illuminating them. Light enhance the architectural subtleties and the grandiosity of the structure. Light metric of colour, rendition, IP and IK are crucial parameters for monuments subjected to adverse weather conditions.",
+    },
+    Lightschool_shop_popup: {
+      heading: "Shop",
+      ParaOne:
+        "Luxury retail and fast fashion are in a continuous endeavour to be unique and attractive. Good lighting create inviting environment and promote sales. Light is an immersive tool to create desired ambience to complement brand image, highlight product details - colour, texture, design and increase business prospects. ",
+      ParaTwo:
+        "Dynamic displays in shop windows and adaptive lighting on the inside initiate positive engagement. Colour rendition, temperature and beam angle are crucial parameters for shop lighting, while ensuring minimal glare and maximum visual comfort for the shoppers.",
+    },
+    Lightschhol_museum_popup: {
+      heading: "Museum & Gallery",
+      ParaOne:
+        "Light is the absolute necessity to highlight the colours, contrast, and beauty of the artefacts. Light for art is about finding the perfect balance between light and darkness to create a specific mood and ambiance that complements the exhibits while enhancing every visitor’s experience. ",
+      ParaTwo:
+        "As the most sensitive application, light quality is of utmost importance for the longitivtiy of art and successful turnaround for every gallery or a museum. Light damage factor, colour rendition, colour shift, harmonic distortions, and beam angles are few among many difficult answers to look for when you need light for art.",
+    },
+    Lightschhol_hotel_popup: {
+      heading: "Hotel",
+      ParaOne:
+        "Hotels are a great place to experience the design trends, technology and culture as business and leisure travellers fly around the world. A visitors impression builds from the facade to a gradual progression into the lobby, lounges and guest rooms.",
+      ParaTwo:
+        "Light interaction with user and space function have unique influence on desired atmosphere and experience. Light accent highlight the details, create drama while ambient improves functional experience. Light colour, design, shape and size are significant along with LEDs quality to build a rich comforting environment. ",
+    },
+    Lighschool_urban_popup: {
+      heading: "Urban spaces",
+      ParaOne:
+        "Urban landscape is presenting city planners with new challenges in creating a unified environment for public life which is safe, functional and yet sustainable. Lighting can help in many ways. Bringing communities together at night by providing a safe and comfortable environment for play and conversations and local businesses. ",
+      ParaTwo:
+        "Light pollution and low pollination is a rising issue in the urban environment, in the form of unwanted light. Light design with intelligent controls enable light to be reactive towards space use and build greener healthier communities while preserving the bio-diversity and reversing climate change.",
+    },
+    Lightschool_home_popup: {
+      heading: "Home",
+      ParaOne:
+        "Our home is an impression of our life, persona and family. Living spaces are packed with collections and aspirations as art, photos, furniture and decor. Light design create a wonderful visual impression unique to our dream space by binding them together",
+      ParaTwo:
+        "Technology conceive flexible lighting to support different needs of the family throughout the day, from playful kids corner to dinner with friends or a quite reading corner. Home need a perfect balance of decorative light to complement decor and technical light to support space use with maximum flexibility.",
+    },
+    Lightschool_transport_popup: {
+      heading: "Transport",
+      ParaOne:
+        "Connecting people beyond oceans, transport hubs have created a cohesive ecosystem. Operational 24x7, these spaces should be welcoming and sustainable while allowing travellers to rest, shop and eat.",
+      ParaTwo:
+        "Light for facade defines the architectural view at night and support different demands of travellers and businesses on the inside. Creating a brighter ambience to feel fresh from longer journeys is the prime function of light, while sustainable consumption and maintenance are the key challenges for operations. Connected lighting solutions helps easy maintenance of such heavy use facilities.",
+    },
+    Lightschool_office_popup: {
+      heading: "Office",
+      ParaOne:
+        "Attractive, engaging, and dynamic work spaces helps create successful businesses. Flexible dynamic lighting allow offices to work better and smarter. With balance of natural and artificial light, we create human centric spaces to inspire and focus. ",
+      ParaTwo:
+        "Smart technologies of IOT, daylight harvesting and occupancy control can generate up to 80% energy savings. LEDs bio-safety and human circadian rhythm are important for healthy workspaces. While luminaire efficacy and sustainable light design allows to minimise carbon footprint. ",
+    },
+    Lightschool_sports_popup: {
+      heading: "Sports",
+      ParaOne:
+        "With it's ever growing popularity, stadiums, sports halls and parks demand advanced infrastructure. Built for multi-use, stadiums hosts concerts and sports hall ceremonies. In these multidimensional utility, flexible lighting becomes ultra important.",
+      ParaTwo:
+        "It will be a delight for urban skaters to see their park turning to party arena on weekend nights. Well designed lighting begins with minimal glare for players and maximum comfort for spectators. Connected lighting with different colours, beams along with high lumen maintenance for durable functional lighting solution",
+    },
+    Lightschool_industries_popup: {
+      heading: "Industries",
+      ParaOne:
+        "A vibrant economy relies on manufacturing and logistical facilities as solid cornerstones. To be stronger, smarter, and faster productive workforce is a must. Light for factories and warehouses should support the safety and production with good quality illuminance but also enhance the well-being of workers by creating a vibrant work environment.",
+      ParaTwo:
+        "Daylight harvesting and volumetric brightness are key actors to do so. Integrated light solutions give real-time feedback about space use and light performance for cost-effective decisions. Good lighting creates productive and positive atmosphere to keep people focussed and aware.",
+    },
   };
 
   return (
@@ -76,9 +156,9 @@ const Lightschool = () => {
                 onClick={() =>
                   openModal(
                     LEDpopup,
-                    "LEDs",
-                    "Since their invention in 1942, LEDs have evolved to become powerful and versatile light source meeting the challenging needs of present world.  These semiconductors though simple to use, are technical instruments of modern engineering, driven by an array of technical factors to ensure durability in their use. ",
-                    "Lumen maintenance, colour rendition and damage factors are few nuances to consider while evaluation an optimal solution for your project.At Kaash, we follow a rigorous technical evaluation to ensure an ideal solution for your project. Let's build your project with light."
+                    imageDetails.LEDpopup.heading,
+                    imageDetails.LEDpopup.ParaOne,
+                    imageDetails.LEDpopup.ParaTwo
                   )
                 }
               >
@@ -100,9 +180,9 @@ const Lightschool = () => {
                   onClick={() =>
                     openModal(
                       Heritagepopup,
-                      "Heritage",
-                      "Castles, forts, and other heritage architecture are noble embodiments of a society's evolving ideals, beliefs, cultures, and values. They serve as living relics of the past and also provide a glimpse into the future of today's civilisation. Often celebrated for tourism, this heritage is pivotal towards economic development along with culture conservation. ",
-                      "Light, as the fourth dimension of architecture, offers enormous value to these structures by illuminating them. Light enhance the architectural subtleties and the grandiosity of the structure. Light metric of colour, rendition, IP and IK are crucial parameters for monuments subjected to adverse weather conditions."
+                      imageDetails.Heritagepopup.heading,
+                      imageDetails.Heritagepopup.ParaOne,
+                      imageDetails.Heritagepopup.ParaTwo
                     )
                   }
                 >
@@ -127,9 +207,9 @@ const Lightschool = () => {
                   onClick={() =>
                     openModal(
                       Lightschool_shop_popup,
-                      "Shop",
-                      "Luxury retail and fast fashion are in a continuous endeavour to be unique and attractive. Good lighting create inviting environment and promote sales. Light is an immersive tool to create desired ambience to complement brand image, highlight product details - colour, texture, design and increase business prospects. ",
-                      "Dynamic displays in shop windows and adaptive lighting on the inside initiate positive engagement. Colour rendition, temperature and beam angle are crucial parameters for shop lighting, while ensuring minimal glare and maximum visual comfort for the shoppers."
+                      imageDetails.Lightschool_shop_popup.heading,
+                      imageDetails.Lightschool_shop_popup.ParaOne,
+                      imageDetails.Lightschool_shop_popup.ParaTwo
                     )
                   }
                 >
@@ -151,9 +231,9 @@ const Lightschool = () => {
                 onClick={() =>
                   openModal(
                     Lightschhol_museum_popup,
-                    "Museum & Gallery",
-                    "Light is the absolute necessity to highlight the colours, contrast, and beauty of the artefacts. Light for art is about finding the perfect balance between light and darkness to create a specific mood and ambiance that complements the exhibits while enhancing every visitor’s experience. ",
-                    "As the most sensitive application, light quality is of utmost importance for the longitivtiy of art and successful turnaround for every gallery or a museum. Light damage factor, colour rendition, colour shift, harmonic distortions, and beam angles are few among many difficult answers to look for when you need light for art."
+                    imageDetails.Lightschhol_museum_popup.heading,
+                    imageDetails.Lightschhol_museum_popup.ParaOne,
+                    imageDetails.Lightschhol_museum_popup.ParaTwo
                   )
                 }
               >
@@ -176,9 +256,9 @@ const Lightschool = () => {
                 onClick={() =>
                   openModal(
                     Lightschhol_hotel_popup,
-                    "Hotel",
-                    "Hotels are a great place to experience the design trends, technology and culture as business and leisure travellers fly around the world. A visitors impression builds from the facade to a gradual progression into the lobby, lounges and guest rooms. ",
-                    "Light interaction with user and space function have unique influence on desired atmosphere and experience. Light accent highlight the details, create drama while ambient improves functional experience. Light colour, design, shape and size are significant along with LEDs quality to build a rich comforting environment. "
+                    imageDetails.Lightschhol_hotel_popup.heading,
+                    imageDetails.Lightschhol_hotel_popup.ParaOne,
+                    imageDetails.Lightschhol_hotel_popup.ParaTwo
                   )
                 }
               >
@@ -221,9 +301,9 @@ const Lightschool = () => {
                 onClick={() =>
                   openModal(
                     Lighschool_urban_popup,
-                    "Urban spaces",
-                    "Urban landscape is presenting city planners with new challenges in creating a unified environment for public life which is safe, functional and yet sustainable. Lighting can help in many ways. Bringing communities together at night by providing a safe and comfortable environment for play and conversations and local businesses. ",
-                    "Light pollution and low pollination is a rising issue in the urban environment, in the form of unwanted light. Light design with intelligent controls enable light to be reactive towards space use and build greener healthier communities while preserving the bio-diversity and reversing climate change."
+                    imageDetails.Lighschool_urban_popup.heading,
+                    imageDetails.Lighschool_urban_popup.ParaOne,
+                    imageDetails.Lighschool_urban_popup.ParaTwo
                   )
                 }
               >
@@ -246,9 +326,9 @@ const Lightschool = () => {
                 onClick={() =>
                   openModal(
                     Lightschool_home_popup,
-                    "Home",
-                    "Our home is an impression of our life, persona and family. Living spaces are packed with collections and aspirations as art, photos, furniture and decor. Light design create a wonderful visual impression unique to our dream space by binding them together",
-                    "Technology conceive flexible lighting to support different needs of the family throughout the day, from playful kids corner to dinner with friends or a quite reading corner. Home need a perfect balance of decorative light to complement decor and technical light to support space use with maximum flexibility."
+                    imageDetails.Lightschool_home_popup.heading,
+                    imageDetails.Lightschool_home_popup.ParaOne,
+                    imageDetails.Lightschool_home_popup.ParaTwo
                   )
                 }
               >
@@ -269,9 +349,9 @@ const Lightschool = () => {
                   onClick={() =>
                     openModal(
                       Lightschool_transport_popup,
-                      "Transport",
-                      "Connecting people beyond oceans, transport hubs have created a cohesive ecosystem. Operational 24x7, these spaces should be welcoming and sustainable while allowing travellers to rest, shop and eat.",
-                      "Light for facade defines the architectural view at night and support different demands of travellers and businesses on the inside. Creating a brighter ambience to feel fresh from longer journeys is the prime function of light, while sustainable consumption and maintenance are the key challenges for operations. Connected lighting solutions helps easy maintenance of such heavy use facilities."
+                      imageDetails.Lightschool_transport_popup.heading,
+                      imageDetails.Lightschool_transport_popup.ParaOne,
+                      imageDetails.Lightschool_transport_popup.ParaTwo
                     )
                   }
                 >
@@ -295,9 +375,9 @@ const Lightschool = () => {
                 onClick={() =>
                   openModal(
                     Lightschool_office_popup,
-                    "Office",
-                    "Attractive, engaging, and dynamic work spaces helps create successful businesses. Flexible dynamic lighting allow offices to work better and smarter. With balance of natural and artificial light, we create human centric spaces to inspire and focus. ",
-                    "Smart technologies of IOT, daylight harvesting and occupancy control can generate up to 80% energy savings. LEDs bio-safety and human circadian rhythm are important for healthy workspaces. While luminaire efficacy and sustainable light design allows to minimise carbon footprint. "
+                    imageDetails.Lightschool_office_popup.heading,
+                    imageDetails.Lightschool_office_popup.ParaOne,
+                    imageDetails.Lightschool_office_popup.ParaTwo
                   )
                 }
               >
@@ -318,9 +398,9 @@ const Lightschool = () => {
                 onClick={() =>
                   openModal(
                     Lightschool_sports_popup,
-                    "Sports",
-                    "With it's ever growing popularity, stadiums, sports halls and parks demand advanced infrastructure. Built for multi-use, stadiums hosts concerts and sports hall ceremonies. In these multidimensional utility, flexible lighting becomes ultra important.",
-                    "It will be a delight for urban skaters to see their park turning to party arena on weekend nights. Well designed lighting begins with minimal glare for players and maximum comfort for spectators. Connected lighting with different colours, beams along with high lumen maintenance for durable functional lighting solution"
+                    imageDetails.Lightschool_sports_popup.heading,
+                    imageDetails.Lightschool_sports_popup.ParaOne,
+                    imageDetails.Lightschool_sports_popup.ParaTwo
                   )
                 }
               >
@@ -341,9 +421,9 @@ const Lightschool = () => {
                 onClick={() =>
                   openModal(
                     Lightschool_industries_popup,
-                    "Industries",
-                    "A vibrant economy relies on manufacturing and logistical facilities as solid cornerstones. To be stronger, smarter, and faster productive workforce is a must. Light for factories and warehouses should support the safety and production with good quality illuminance but also enhance the well-being of workers by creating a vibrant work environment.",
-                    "Daylight harvesting and volumetric brightness are key actors to do so. Integrated light solutions give real-time feedback about space use and light performance for cost-effective decisions. Good lighting creates productive and positive atmosphere to keep people focussed and aware."
+                    imageDetails.Lightschool_industries_popup.heading,
+                    imageDetails.Lightschool_industries_popup.ParaOne,
+                    imageDetails.Lightschool_industries_popup.ParaTwo
                   )
                 }
               >
@@ -386,10 +466,8 @@ const Lightschool = () => {
                 />
               </div>
               <div className="text-[10px] sm:text-xs  xl:text-sm">
-                <p className="modal-detailsone">{modalContent.detailsone}</p>
-                <p className="modal-detailstwo pt-4">
-                  {modalContent.detailstwo}
-                </p>
+                <p className="modal-detailsone">{modalContent.Paraone}</p>
+                <p className="modal-detailstwo pt-4">{modalContent.Paratwo}</p>
               </div>
             </div>
           </div>
